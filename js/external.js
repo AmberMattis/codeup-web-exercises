@@ -63,7 +63,7 @@ console.log("Hello from external JavaScript");
 
 		// Output weeks pay // 
 
-				alert("You earved " + weeksPay.toFixed(2) + " dollars this week.");
+				alert("You earned " + weeksPay.toFixed(2) + " dollars this week.");
 
 					// You earned a total of _____ dollars this week //
 					
@@ -72,30 +72,39 @@ console.log("Hello from external JavaScript");
 		var classFull = confirm("Is the class full");
 		var conflicts = confirm("Do you have any conflict?");
 
-			alert("You are free to enroll");
+		 if (!classFull && !conflicts) {
+		 	alert("You can Enroll")
+		 }else{ 
+		 	alert("You can't enroll")
+		}
 
 
 
+	// 3.d //
 
+		var itemNumber = confirm("Did you buy more than two items?");
+		var expire = confirm("Has the offer expired?");
+		var premium = confirm("Are you a premium member?");
 
-
-
-
-
-
-			console.log("")
-
-
-			console.log()
-
-
-	
-
-			
-
-
+		if (itemNumber && !expire || premium) {
+			alert("Product offer applied");
+		}else{
+			alert("Product not offered")
+		}
 
 		
+
+
+
+
+
+
+
+
+
+
+
+
 		
 
  
