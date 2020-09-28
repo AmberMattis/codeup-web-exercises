@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+	"use strict"
+//Exercises//
+//1 .For each of the folowing, predict and execute the result.// 
+
+	var a = 1;
+	var b = a++;
+	var c = ++a;
+
+		console.log(a);
+		console.log(b);
+		console.log(c);
+	
+	// a = 3, b = 1, c = 3 //
+
+	var d = "hello";
+	var e = false;
+
+		d++;
+		e++;
+
+		console.log(d);
+		console.log(e);
+	
+	// d = NaN, e = 1 //
+
+	var perplexed 
+
+		console.log(perplexed + 2);
+
+	// perplexed = NaN //
+
+	var price = 2.7;
+
+	 	console.log(price.toFixed(2));
+
+	// price = 2.70 //
+
+	var price = "2.7";
+
+		//console.log(price.toFixed(2));//
+
+	// Uncaught type error: price.toFixed not a function //
+
+	console.log(isNaN(0));
+
+	// false //
+
+	console.log(isNaN(1));
+
+	// false //
+
+	console.log(isNaN(""));
+
+	// false //
+
+	console.log(isNaN("string"));
+
+	// true //
+
+	console.log(isNaN("0"));
+
+	// false //
+
+	console.log(isNaN("1"));
+
+	// false //
+
+	console.log(isNaN("3.145"));
+
+	// false // 
+
+	console.log(isNaN(Number.MAX_VALUE));
+
+	// false //
+
+	console.log(isNaN(Infinity));
+
+	// false //
+
+	console.log(isNaN("true"));
+
+	// true //
+
+	console.log(isNaN(true));
+
+	// false  //
+
+	console.log(isNaN("false"));
+
+	// true //
+
+	console.log(isNaN(false));
+
+	// fasle //
+
+	console.log(isNaN == isNaN);
+
+	// true // 
+
+	console.log(!true);
+
+	// false //
+
+	console.log(!false);
+
+	// true //
+
+	console.log(!!true);
+
+	// true //
+
+	console.log(!!false);
+
+	// fasle // 
+
+	console.log(!!0);
+
+	// false //
+
+	console.log(!!-0);
+
+	// false // 
+
+	console.log(!!1);
+
+	// true // 
+
+	console.log(!!-1);
+
+	// true //
+
+	console.log(!!0.1);
+
+	// true //
+
+	console.log(!!"hello");
+
+	// true // 
+
+	console.log(!!"");
+
+	// false //
+
+	console.log(!!'');
+
+	// false // 
+
+	console.log(!!"false");
+
+	// true //
+
+	console.log(!!"0");
+
+	// true //
+
+
+// 2. Execute the following statement in the Chrome JavaScript console then follow the directions below
+
+	var sample = "Hello Codeup";
+
+		console.log(sample.length);
+
+			// 12 //
+
+		console.log(sample.toUpperCase());
+
+			// HELLO CODEUP //
+
+		console.log(sample.toLowerCase());
+
+			// hello coedup //
+
+	var sample = sample + " Students"		
+		
+		console.log(sample);
+
+			// Hello Codeup Students //
+
+		console.log(sample.replace ("Students",  "Class"));
+
+			// Hello Codeup Class //
+
+		console.log(sample.indexOf("c"));
+
+			// -1  (when the result is a negative number, this means that the charature  being indexed does not exist in the string) //
+
+		console.log(sample.indexOf("C"));
+
+			// 6 //
+
+		console.log(sample.indexOf("p")); // 12 //
+		console.log(sample.substring(6, 12));
+
+			// Codeup // 
+
+
+// 3. Write some JS code that is variable ans operators, to tdescribe the following scenerios.//
+
+ 	// 3.a //
+
+ 		var daysLittleMermaid = 3;
+ 		var daysBrotherBear = 5;
+ 		var daysHercules = 1;
+ 		var pricePerDay = 3;
+ 		var totalPrice = ((Numbers.daysLittleMermaid + Numbers.daysBrotherBear + Numbers.daysHercules) * pricePerDay);
+
+ 			console.log("The total cost is:", totalPrice, "dollars");
+
+ 				// The totla cost is: 27 dollars // 
+
+ 	// 3.b //
+
+ 		// Google Pay //
+
+ 			var hourlyRateGoogle = 400.00;
+ 			var hoursWorkedGoogle = 6;
+ 			var totalGoogle = Number(hourlyRateGoogle) * Number(hoursWorkedGoogle);
+ 		
+ 		// Facebook Pay //
+
+ 			var hourlyRateFacebook = 350.00;
+ 			var hoursWorkedFacebook = 10;
+ 			var totalFacebook = Number(hourlyRateFacebook) * Number(hoursWorkedFacebook);
+ 		
+ 		// Amazon Pay //
+
+ 			var hourlyWageAmazon = 380.00;
+ 			var hoursWorkedAmazon = 4;
+ 			var totalAmazon = Number(hourlyWageAmazon) * Number(hoursWorkedAmazon);
+
+ 		//Weekly Pay// 
+
+ 			var weeksPay  = (totalGoogle * totalFacebook * totalAmazon);
+
+ 		// Output weeks pay // 
+
+ 				console.log(weeksPay);
+
+ 					// 12768000000 //
+
+ 	// 3.c //
+
+ 		var classNotFull = true;
+ 		var classFull = false;
+ 		var noConflict = true;
+ 		var conflict = false;
+
+ 				console.log(classNotFull && noConflict); // true //
+ 				console.log(classFull && noConflict); // false //
+ 				console.log(classNotFull && conflict); // fasle //
+ 				console.log(classFull && conflict); // false // 
+ 					
+
+ 	// 3.d //
+
+ 		var moreThanTwoItems = true;
+ 		var offerNotExpired = true;
+ 		var premiumMembers = true;
+ 		var offerExpired = false;
+ 		var twoOrLessItems = false;
+
+
+ 			console.log(moreThanTwoItems && offerNotExpired || premiumMembers);
+
+ 				// true // 
+
+// 4. USe the following code to follow the instructions //
+
+	var username = "codeup";
+	var password = " notastrongpassword";
+
+	password.length > 4 = true ;
+	password != username = true;
+	username.length < 21 = true;
+	username = username.trim();
+	password = password.trim();
+
+	console.log(username);
+
+
+
+	
+
+
+
+ 			
+
+
+ 			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
+
