@@ -69,15 +69,25 @@ console.log("Hello from external JavaScript");
 					
 	// 3.c //
 
-		var classNotFull = true;
-		var classFull = false;
-		var noConflict = true;
-		var conflict = false;
+		var classFull = confirm("Is the class full");
+		var conflicts = confirm("Do you have any conflict?");
 
-				alert(classNotFull && noConflict); // true //
-				alert(classFull && noConflict); // false //
-				alert(classNotFull && conflict); // fasle //
-				alert(classFull && conflict); // false // 
+			alert("You are free to enroll");
+
+
+
+
+
+
+
+
+
+
+			console.log("")
+
+
+			console.log()
+
 
 	
 
