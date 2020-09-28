@@ -14,7 +14,7 @@ console.log("Hello from external JavaScript");
 
 // 3. //
 
-	// Write some JS code that is variable ans operators, to tdescribe the following scenerios. //
+	// Write some JS code that is variable ans operators, to describe the following scenerios. //
 
 	// 3.a //
 
