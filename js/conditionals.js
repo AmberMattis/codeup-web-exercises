@@ -23,17 +23,17 @@
      */
 
 
-        function analyzeColor(color){
-             if(color === "blue") {
-                 return "blue is the color of the sky"
-             }else if(color === "red"){
-                 return "strawberries are red."
-             }else if(color === "cyan"){
-                 return "I don't know anything about cyan"
-             }else{
-                 return "I didn't ask for this color"
-             }
-         }
+        // function analyzeColor(color){
+        //      if(color === "blue") {
+        //          return "blue is the color of the sky"
+        //      }else if(color === "red"){
+        //          return "strawberries are red."
+        //      }else if(color === "cyan"){
+        //          return "I don't know anything about cyan"
+        //      }else{
+        //          return "I didn't ask for this color"
+        //      }
+        //  }
         // console.log(analyzeColor("green"));
         // console.log(analyzeColor("purple"));
         // console.log(analyzeColor("red"));
@@ -52,13 +52,29 @@
      * Pass the `randomColor` variable to your function and console.log the results.
      * You should see a different message every time you refresh the page
      */
-      console.log(analyzeColor(randomColor));
+      //console.log(analyzeColor(randomColor));
     /**
      * TODO:
      * Refactor your above function to use a switch-case statement
      */
-
-    /**
+        function analyzeColor(color){
+            switch(color){
+                case "blue":
+                    return "Blue is the color of the sky";
+                    break;
+                case "red":
+                    return "Red is the color of strawberries";
+                    break;
+                case "cyan":
+                    return "I don't know anyhting about cyan";
+                    break;
+                default:
+                    return "OOPS I try another color!";
+                    break;
+            }
+    }
+        console.log(analyzeColor(randomColor));
+    /**git
      * TODO:
      * Prompt the user for a color when the page loads, and pass the input from the
      * user to your `analyzeColor` function. Alert the return value from your
