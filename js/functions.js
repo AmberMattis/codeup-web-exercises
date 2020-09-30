@@ -64,7 +64,7 @@ function isTwo(num) {
 		return true
 	}else{
 		return false
-	}
+	}// return num === 2 is a more efficient way to do it
 }
 
 	console.log(isTwo(random));
@@ -81,8 +81,8 @@ function isTwo(num) {
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
- function calculateTip(x, y) {
- 	return (x * y)
+ function calculateTip(percentage, total) {
+ 	return (percentage * total)
  }
  /**
  * TODO:
@@ -91,9 +91,9 @@ function isTwo(num) {
  * then display the dollar amount they should tip */
 
  var billBeforeTip = Number(prompt("How much is the bill"));
- var tipPercent = Number(prompt("What percentage would you like to tip?"));
+ var tipPercent = Number(prompt("What percentage would you like to tip? Enter a number from 1-100?"));
 
- 	alert("Your total tip amount is $" + calculateTip(Number(tipPercent) ,Number(billBeforeTip)));
+ 	alert("Your total tip amount is $" + calculateTip(Number(tipPercent), Number(billBeforeTip)));
 
  /**
  * TODO:
@@ -111,7 +111,7 @@ function isTwo(num) {
  */
 
 function applyDiscount(x , y) {
-	return (x * y)	
+	return (x * y)
 }
 
 var originalPrice = Number(prompt("Whats the original price?"));
