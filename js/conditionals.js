@@ -106,7 +106,7 @@
      * return value.
      */
     function calculateTotal(luckyNum, discTotal){
-        discTotal = 100
+       // discTotal = 100
         switch(luckyNum){
             case 0:
                 return discTotal;
@@ -131,13 +131,13 @@
 
         }
     }
-    console.log(calculateTotal(0));
-    console.log(calculateTotal(1));
-    console.log(calculateTotal(2));
-    console.log(calculateTotal(3));
-    console.log(calculateTotal(4));
-    console.log(calculateTotal(5));
-    console.log(calculateTotal(10));
+    // console.log(calculateTotal(0));
+    // console.log(calculateTotal(1));
+    // console.log(calculateTotal(2));
+    // console.log(calculateTotal(3));
+    // console.log(calculateTotal(4));
+    // console.log(calculateTotal(5));
+    // console.log(calculateTotal(10));
     /**
      * TODO:
      * Uncomment the line below to generate a random number between 0 and 6.
@@ -145,8 +145,13 @@
      * and alerts to display to the user what their lucky number was, what their
      * price before the discount was, and what their price after the discount is.
      */
-    // Generate a random number between 0 and 6
-    // var luckyNumber = Math.floor(Math.random() * 6);
+    //Generate a random number between 0 and 6
+     var luckyNumber = Math.floor(Math.random() * 6);
+
+     var discTotal = prompt("Please enter your total bill");
+        alert("Your number is: " + luckyNumber);
+        alert("Your original bill was: " +  discTotal);
+        alert("Your discounted price is: " + calculateTotal(luckyNumber,discTotal));
 
     /**
      * TODO:
