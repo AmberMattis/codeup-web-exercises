@@ -80,6 +80,8 @@
      * user to your `analyzeColor` function. Alert the return value from your
      * function to show it to the user.
      */
+        var userColor = prompt("What's your favorite color?");
+        alert(analyzeColor(userColor));
 
     /* ########################################################################## */
 
