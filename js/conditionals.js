@@ -57,31 +57,31 @@
      * TODO:
      * Refactor your above function to use a switch-case statement
      */
-        function analyzeColor(color){
-            switch(color){
-                case "blue":
-                    return "Blue is the color of the sky";
-                    break;
-                case "red":
-                    return "Red is the color of strawberries";
-                    break;
-                case "cyan":
-                    return "I don't know anyhting about cyan";
-                    break;
-                default:
-                    return "OOPS I try another color!";
-                    break;
-            }
-    }
-        console.log(analyzeColor(randomColor));
+    //     function analyzeColor(color){
+    //         switch(color){
+    //             case "blue":
+    //                 return "Blue is the color of the sky";
+    //                 break;
+    //             case "red":
+    //                 return "Red is the color of strawberries";
+    //                 break;
+    //             case "cyan":
+    //                 return "I don't know anyhting about cyan";
+    //                 break;
+    //             default:
+    //                 return "OOPS I try another color!";
+    //                 break;
+    //         }
+    // }
+    //     console.log(analyzeColor(randomColor));
     /**git
      * TODO:
      * Prompt the user for a color when the page loads, and pass the input from the
      * user to your `analyzeColor` function. Alert the return value from your
      * function to show it to the user.
      */
-        var userColor = prompt("What's your favorite color?");
-        alert(analyzeColor(userColor));
+        // var userColor = prompt("What's your favorite color?");
+        // alert(analyzeColor(userColor));
 
     /* ########################################################################## */
 
@@ -101,10 +101,43 @@
      * calculateTotal(4, 100) // returns 50
      * calculateTotal(5, 100) // returns 0
      *
-     * Test your function by passing it various values and checking for the expected
+     * Test your function by passing it various values and ch
+     * ecking for the expected
      * return value.
      */
+    function calculateTotal(luckyNum, discTotal){
+        discTotal = 100
+        switch(luckyNum){
+            case 0:
+                return discTotal;
+                break;
+            case 1:
+                return discTotal - discTotal * .10;
+                break;
+            case 2:
+                return discTotal - discTotal * .25;
+                break;
+            case 3:
+                return discTotal - discTotal * .45;
+                break;
+            case 4:
+                return discTotal - discTotal * .50;
+            case 5:
+                return "Congrats all for free!";
+                break;
+            default:
+                return "Sorry you're not eligible for a refund.";
+                break;
 
+        }
+    }
+    console.log(calculateTotal(0));
+    console.log(calculateTotal(1));
+    console.log(calculateTotal(2));
+    console.log(calculateTotal(3));
+    console.log(calculateTotal(4));
+    console.log(calculateTotal(5));
+    console.log(calculateTotal(10));
     /**
      * TODO:
      * Uncomment the line below to generate a random number between 0 and 6.
