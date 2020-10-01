@@ -105,32 +105,32 @@
      * ecking for the expected
      * return value.
      */
-    function calculateTotal(luckyNum, discTotal){
-       // discTotal = 100
-        switch(luckyNum){
-            case 0:
-                return discTotal;
-                break;
-            case 1:
-                return discTotal - discTotal * .10;
-                break;
-            case 2:
-                return discTotal - discTotal * .25;
-                break;
-            case 3:
-                return discTotal - discTotal * .45;
-                break;
-            case 4:
-                return discTotal - discTotal * .50;
-            case 5:
-                return "Congrats all for free!";
-                break;
-            default:
-                return "Sorry you're not eligible for a refund.";
-                break;
-
-        }
-    }
+    // function calculateTotal(luckyNum, discTotal){
+    //    // discTotal = 100
+    //     switch(luckyNum){
+    //         case 0:
+    //             return discTotal;
+    //             break;
+    //         case 1:
+    //             return discTotal - discTotal * .10;
+    //             break;
+    //         case 2:
+    //             return discTotal - discTotal * .25;
+    //             break;
+    //         case 3:
+    //             return discTotal - discTotal * .45;
+    //             break;
+    //         case 4:
+    //             return discTotal - discTotal * .50;
+    //         case 5:
+    //             return "Congrats all for free!";
+    //             break;
+    //         default:
+    //             return "Sorry you're not eligible for a refund.";
+    //             break;
+    //
+    //     }
+    // }
     // console.log(calculateTotal(0));
     // console.log(calculateTotal(1));
     // console.log(calculateTotal(2));
@@ -146,12 +146,12 @@
      * price before the discount was, and what their price after the discount is.
      */
     //Generate a random number between 0 and 6
-     var luckyNumber = Math.floor(Math.random() * 6);
-
-     var discTotal = prompt("Please enter your total bill");
-        alert("Your number is: " + luckyNumber);
-        alert("Your original bill was: " +  discTotal);
-        alert("Your discounted price is: " + calculateTotal(luckyNumber,discTotal));
+    //  var luckyNumber = Math.floor(Math.random() * 6);
+    //
+    //  var discTotal = prompt("Please enter your total bill");
+    //     alert("Your number is: " + luckyNumber);
+    //     alert("Your original bill was: " +  discTotal);
+    //     alert("Your discounted price is: " + calculateTotal(luckyNumber,discTotal));
 
     /**
      * TODO:
@@ -170,6 +170,29 @@
      * HINT: The way we prompt for a value could be improved
      *
      */
+
+
+
+    function userNumber(numType) {
+        var userChoice = confirm("Would you like to enter a number?");
+        if (userChoice === true) {
+        prompt("Enter a number")
+            if (numType === numType % 2) {
+                alert("Your number even")
+            } else if (numType === numType % 1) {
+                alert("Your number is odd")
+            } else if (numType === -numType) {
+                alert("your number is negative")
+            } else if (numType === numType.abs(numType)) {
+                alert("Your number is positive")
+            } else if (numType !== parseFloat(numType)) {
+                alert("This is not an number")
+            } else {
+                alert("Goodbye")
+            }
+        }
+    }
+
 })();
 
 
