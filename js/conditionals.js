@@ -181,9 +181,9 @@
                 alert("Your number even")
             } else if (numType === numType % 1) {
                 alert("Your number is odd")
-            } else if (numType === -numType) {
+            } else if (numType < 0 ) {
                 alert("your number is negative")
-            } else if (numType === numType.abs(numType)) {
+            } else if (numType > 0) {
                 alert("Your number is positive")
             } else if (numType !== parseFloat(numType)) {
                 alert("This is not an number")
