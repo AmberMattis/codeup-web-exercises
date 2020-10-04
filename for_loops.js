@@ -20,14 +20,3 @@ for( i = 105; i > 5; i){
     console.log(i -= 5);
 }
 
-for( i = 1; i < 2; i++ ){
-    console.log("1");
-    console.log("22");
-    console.log("333");
-    console.log("4444");
-    console.log("55555");
-    console.log("666666");
-    console.log("7777777");
-    console.log("88888888");
-    console.log("999999999");
-}
