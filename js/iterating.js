@@ -54,21 +54,21 @@
      */
     var nums = [1, 2, 3, 4, 5];
 
-    function firstNum(x){
+    function first(arr){
         return nums[0];
     }
 
-    console.log(firstNum());
+    console.log(first());
 
-    function secondNum(x){
+    function second(arr){
         return nums[1];
     }
 
-    console.log(secondNum());
+    console.log(second());
 
-    function lastNum(x){
+    function last(arr){
         return nums[4];
     }
 
-    console.log(lastNum());
+    console.log(last());
 })();
