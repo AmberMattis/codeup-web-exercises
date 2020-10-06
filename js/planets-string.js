@@ -30,9 +30,9 @@
     console.log(planetsString);
 
 
-    Creating an unordered list
+    //Creating an unordered list
     var ul = document.createElement("ul");
-    ul.innerHTML = "<li>Mercury<l/i><li>Venus</li><li>Earth</li><li>Mars</li><li>Jupiter</li><li>Saturn</li><li>Uranus</li><li>Neptune</li>";
+    ul.innerHTML = "<li>Mercury</li><li>Venus</li><li>Earth</li><li>Mars</li><li>Jupiter</li><li>Saturn</li><li>Uranus</li><li>Neptune</li>";
     document.body.appendChild(ul);
 
 
