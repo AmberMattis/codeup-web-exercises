@@ -26,15 +26,15 @@
      * string, and <li> tags around each planet.
      */
     var planetsString = "Mercury \nVenus \nEarth \nMars \nJupiter \nSaturn \nUranus \nNeptune";   //This might be useful because it would be easier to read especially if you have a really long string.
-
-    console.log(planetsString);
-
+    console.log(planetsString)
 
     //Creating an unordered list
+
+
     var ul = document.createElement("ul");
     ul.innerHTML = "<li>Mercury</li><li>Venus</li><li>Earth</li><li>Mars</li><li>Jupiter</li><li>Saturn</li><li>Uranus</li><li>Neptune</li>";
     document.body.appendChild(ul);
 
-
+//
 
 })();
