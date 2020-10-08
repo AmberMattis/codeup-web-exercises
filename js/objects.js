@@ -72,7 +72,6 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-
     /**
      * TODO:
      * Loop through the books array and output the following information about
