@@ -11,12 +11,12 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-        var person = {}
-
-            person.firstName = "Rick";
-            person.lastName = "James";
-
-        console.log("I'm " + person.firstName + " " + person.lastName + "!");
+        // var person = {}
+        //
+        //     person.firstName = "Rick";
+        //     person.lastName = "Sanchez";
+        //
+        // console.log("I'm " + person.firstName + " " + person.lastName + "!");
 
 
 
@@ -29,6 +29,16 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
+        var person = {}
+
+            person.firstName = "Rick";
+            person.lastName = "Sanchez";
+
+            function sayHello(){
+                return ("Hello from " + person.firstName + " " + person.lastName + "!");
+            }
+            console.log(sayHello())
+
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
