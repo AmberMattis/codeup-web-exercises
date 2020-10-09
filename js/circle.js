@@ -3,7 +3,7 @@
 
     // create a circle object
     var circle = {
-        radius: 3,
+        radius: 5,
 
         getArea: function () {
             // TODO: complete this method
@@ -27,17 +27,16 @@
         }
     }
     // log info about the circle
-    console.log("Raw circle information");
-    console.log(circle.logInfo(false));
-    console.log("Circle information rounded to the nearest whole number" + Math.round(circle.getArea()));
-    console.log(circle.logInfo(true));
-//
+//     console.log("Raw circle information");
+//     console.log(circle.logInfo(false));
+//     console.log("Circle information rounded to the nearest whole number" + Math.round(circle.getArea()));
+//     console.log(circle.logInfo(true));
+// //
     console.log("=======================================================");
    // TODO: Change the radius of the circle to 5.
-
-     // log info about the circle
-     // console.log("Raw circle information");
-     // console.log(circle.logInfo(false);
-     // console.log("Circle information rounded to the nearest whole number" + Math.round(circle.getArea());
-     // console.log(circle.logInfo(true);
+    //  log info about the circle
+     console.log("Raw circle information");
+     console.log(circle.logInfo(false));
+     console.log("Circle information rounded to the nearest whole number" + Math.round(circle.getArea()));
+     console.log(circle.logInfo(true));
     })();
