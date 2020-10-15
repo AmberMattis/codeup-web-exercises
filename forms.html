@@ -5,8 +5,16 @@
     <title>Register With Us</title>
 </head>
 <body>
+    <header>
+      <h1>Register with Us</h1>
+    </header>
 
-    <h1>Register with Us</h1>
+    <nav>
+      <a href="welcome.html">Homepage</a>
+    </nav>
+
+    <main>
+      <h3>Create a username and password</h3>
          <form method="POST" action ="https://request-inspector.glitch.me/">
               <label for="username">Username
                    <input id="username" name="username" type="text" placeholder="Enter email">
@@ -26,16 +34,18 @@
            <input type="submit">
         </form><br>
 
+
     <h3>How did you here about us?</h3>
         <form method="POST" action ="https://request-inspector.glitch.me/">
                 <label for="radio">Select one<br><br>
                      Billboard <input id="radio" type="radio" name="answer_2" value="billboard"><br>
-                     Radio Advertisement <input id="radio" type="radio" name="answer_2" value="radio advertisement"><br>
-                     Internet Advertisement<input id="radio" type="radio" name="answer_1" value="internet advertisement"><br>
-                     Other <input id="radio" type="radio" name="answer_1" value="other">
+                     Radio Advertisement <input type="radio" name="answer_2" value="radio advertisement"><br>
+                     Internet Advertisement<input type="radio" name="answer_1" value="internet advertisement"><br>
+                     Other <input type="radio" name="answer_1" value="other">
                 </label><br>
            <input type="submit">
         </form><br>
+
 
     <h3>Which browser are you using?</h3>
         <form method="POST" action ="https://request-inspector.glitch.me/">
@@ -49,7 +59,11 @@
                </label><br>
              <input type="submit">
         </form>
+    </main>
 
+    <footer>
+      <p><em>All products come with our quality gaurantee&trade;.</em></p>
+    </footer>
 
 
 </body>
