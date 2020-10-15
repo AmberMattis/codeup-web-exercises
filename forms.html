@@ -5,18 +5,45 @@
     <title>Register With Us</title>
 </head>
 <body>
+<h1>Register with Us</h1>
 <form method="POST" action ="https://request-inspector.glitch.me/">
-        <input type="text" name="email" placeholder="Enter your email address.">
+  <label for="username">Username
+        <input id="username" name="username" type="text" placeholder="Enter email">
+  </label>
     <br>
-         <input type="password" name="password" placeholder="Create a password">
-    <br>
-         <textarea name="bio"></textarea>
-    <br>
-        Billboard <input type="radio" name="answer1" value="billboard"><br>
-        Radio Advertisement <input type="radio" name="answer1" value="radio advertisement"><br>
-        Internet Advertisement<input type="radio" name="answer1" value="internet advertisement"><br>
-        Other <input type="radio" name="answer1" value="other"><br>
+  <label for="password">Password
+        <input id="password" type="password" name="password" placeholder="Create a password">
+  </label>
 </form>
+<br>
+<h3>Tell us about yourself</h3>
+<form method="POST" action ="https://request-inspector.glitch.me/">
+  <label for="bio">Bio
+         <textarea id="bio" name="bio" ></textarea>
+  </label>
+</form>
+
+<h3>How did you here about us?</h3>
+<form method="POST" action ="https://request-inspector.glitch.me/">
+        Billboard <input type="radio" name="answer_2" value="billboard"><br>
+        Radio Advertisement <input type="radio" name="answer_2" value="radio advertisement"><br>
+        Internet Advertisement<input type="radio" name="answer_1" value="internet advertisement"><br>
+        Other <input type="radio" name="answer_1" value="other">
+</form>
+    <br>
+
+<h3>Which browser are you using?</h3>
+<form>
+      <select name="Which browser are you using?">
+          <option value="chrome">Chrome</option>
+          <option value="safari">Safari</option>
+          <option value="firefox">Firefox</option>
+          <option value="egde">Microsoft Edge</option>
+      </select>
+</form>
+
+  <input type="submit">
+
 
 </body>
 </html>
