@@ -9,14 +9,13 @@
     text-decoration: underline;
 }
 
-body, html {
+body {
     background-color: black;
     color: white;
     background-image: url("corporate-lady.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height:100%;
 
 }
 
