@@ -5,37 +5,67 @@ bdoy, html {
     padding: 0;
     margin: 0;
     font-family: Ariel, Arial, Ubuntu, sans-serif;
+    font-size: small;
 }
 
 :root {
+    --spacing: 5px;
+    --margin: 7px;
+    --border: 1px solid lightgrey;
     --bg-info: rgb(205,222,255);
-    --text-info: blue;
+    --text-info: rgb(67,63,157);
     --bg-success: rgb(208,243,218);
-    --text-success: green;
+    --text-success: rgb(64,137,90);
     --bg-warning: rgb(253,251,201);
-    --text-warning: yellow;
+    --text-warning: rgb(176,161,81);
     --bg-error: rgb(249,210,215);
-    --text-error: red:
+    --text-error: rgb(145,49,73);
+    --edges: 5px;
+
 
 }
 
 .message-info{
    background-color: var(--bg-info);
    color: var(--text-info);
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+    padding-left: var(--spacing);
+    margin: var(--margin);
+    border: var(--border);
+    border-radius: var(--edges);
 
 }
 
 .message-success{
     background-color: var(--bg-success);
     color: var(--text-success);
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+    padding-left: var(--spacing);
+    margin: var(--margin);
+    border: var(--border);
+    border-radius: var(--edges);
 }
 
 .message-warning{
     background-color: var(--bg-warning);
     color: var(--text-warning);
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+    padding-left: var(--spacing);
+    margin: var(--margin);
+    border: var(--border);
+    border-radius: var(--edges);
 }
 
 .message-error{
     background-color: var(--bg-error);
     color: var(--text-error);
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+    padding-left: var(--spacing);
+    margin: var(--margin);
+    border: var(--border);
+    border-radius: var(--edges);
 }
