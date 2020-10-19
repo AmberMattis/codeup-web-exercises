@@ -53,7 +53,7 @@ fieldset {
 
 .form-control {
     padding-top: 4px;
-    padding-bootom: 4px; /* There must be 4px on top of the text and below the text of an input with this class */
+    padding-bottom: 4px; /* There must be 4px on top of the text and below the text of an input with this class */
     margin-top: .5em; margin-bottom: .5em; /* It should have a separation of .5em from elements on top of it and below it */
 
     /* You'll need to use the `calc` function to make the width of this element match the width of the button */
