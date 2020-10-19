@@ -1,0 +1,49 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+:root {
+    --border: 1px solid black;
+    --main-margin: auto;
+    --stripe-size: 100px 220px;
+    --location: 7em;
+
+
+
+}
+
+.flag {
+    padding: 200px 320px;
+    margin: var(--main-margin);
+    background-color: navy;
+    width: 20px;
+    height: 50%;
+}
+
+.red-back{
+    position: relative;
+    right: var(--location);
+    padding: var(--stripe-size);
+    background-color: #913149;
+}
+.white-back{
+    position: relative;
+    right: var(--location);
+    bottom: 25em;
+    padding: var(--stripe-size);
+    background-color: blanchedalmond;
+
+}
+
+
