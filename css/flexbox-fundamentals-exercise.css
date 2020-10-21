@@ -11,7 +11,7 @@ h1 {text-align: center;}
 
 h2, h3 {
     padding: 0;     /* added margin 10px to put space between heading and boxes */
-    margin: 10px auto;
+    margin: 15px auto;
 }
 
 .container {
@@ -83,15 +83,12 @@ section:nth-of-type(1) div:last-child {
 
 section:nth-of-type(3) {
     margin: 10px auto;
-    display:flex;
-
-
 
    /* enter needed declarations here */
 }
 
 section:nth-of-type(3) h3 {
-   margin: 10px 0;
+    margin-left: 0;
 
     /* enter needed declarations here */
 
@@ -135,6 +132,10 @@ section:nth-of-type(5) {
 section:nth-of-type(6) {
     background: coral;
     height: 14em;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     /* enter needed declarations here */
 }
 
