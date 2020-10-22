@@ -23,7 +23,11 @@ body {
 .cover {
     height: 100vh;
     width: 100%;
+<<<<<<< HEAD
+    display: flex;/* TODO: add a flex container to this selector */
+=======
     display:flex; /* TODO: add a flex container to this selector */
+>>>>>>> f8187bf6e2ed63ed7926490a9d64b2e44ba7d297
 }
 
 .flex-form {
@@ -32,7 +36,11 @@ body {
     border: 20px solid rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     margin: auto;
+<<<<<<< HEAD
+    display: flex;/* TODO: Add an automatic margin and a flex container to this selector */
+=======
     display: flex; /* TODO: Add an automatic margin and a flex container to this selector */
+>>>>>>> f8187bf6e2ed63ed7926490a9d64b2e44ba7d297
 }
 
 .flex-form > * {
@@ -54,6 +62,15 @@ body {
 }
 
 .destination {
+<<<<<<< HEAD
+
+    flex-basis: 15em;
+}
+    /* TODO:
+        Add an explicit size for items along the main axis of 15em.
+        Read more about Flex Basis: https://java.codeup.com/appendix/further-reading/html-css/flexbox-additional-concepts/#flex-basis */
+
+=======
    flex-basis: 15em;
 
 
@@ -61,3 +78,4 @@ body {
         Add an explicit size for items along the main axis of 15em.
         Read more about Flex Basis: https://java.codeup.com/appendix/further-reading/html-css/flexbox-additional-concepts/#flex-basis */
 }
+>>>>>>> f8187bf6e2ed63ed7926490a9d64b2e44ba7d297

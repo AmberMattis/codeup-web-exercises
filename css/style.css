@@ -1,3 +1,24 @@
+.header {
+    background-image: url("veridianhead.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.header-title {
+    position: relative;
+    top: 75px;
+    left: 375px;
+    font-size: x-large;
+    font-family: 'Satisfy', cursive;
+}
+
+.header-message{
+    position:relative;
+    top: 75px;
+}
+
 .fancy-header{
     color: purple;
     text-decoration: underline;
@@ -12,11 +33,9 @@
 body {
     background-color: black;
     color: white;
-    background-image: url("corporate-lady.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
 }
 
+ul {
+    list-style-type: square;
+}
 

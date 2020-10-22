@@ -2,13 +2,13 @@
     box-sizing: border-box;
 }
 
-html body{
+html body {
     margin: 0;
 }
 
 .navbar {
     height: 4.25em;
-    background-color: lightgray;
+    background-color: lightgray
 }
 
 .list {
