@@ -7,8 +7,10 @@ html body {
 }
 
 .navbar {
+    position:relative;
     height: 4.25em;
     background-color: lightgray
+
 }
 
 .list {
@@ -61,4 +63,8 @@ margin: auto;
 i {
     font-size: 15px;
     color: black;
+}
+
+.item5 {
+    position: absolute;
 }
