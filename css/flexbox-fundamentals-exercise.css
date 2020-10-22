@@ -52,7 +52,7 @@ section:nth-of-type(1) {
 
 
 section:nth-of-type(1) div:last-child {
-    displa: flex;
+    display: flex;
     align-self: flex-start;
 
 }
