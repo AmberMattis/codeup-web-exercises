@@ -179,6 +179,24 @@
             var isNumber = !isNaN(userInput);
             if(isNumber){
 
+ get-user-number-return-alert
+    function userNumber(numType) {
+        var userChoice = confirm("Would you like to enter a number?");
+        if (userChoice === true) {
+        prompt("Enter a number")
+            if (numType === numType % 2) {
+                alert("Your number even")
+            } else if (numType === numType % 1) {
+                alert("Your number is odd")
+            } else if (numType < 0) {
+                alert("your number is negative")
+            } else if (numType > 0) {
+                alert("Your number is positive")
+            } else if (numType !== (numType)) {
+                alert("This is not an number")
+            } else {
+                alert("Goodbye")
+              
                 var userNumber = parseFloat(userInput);
                 var isEven = userInput % 2 === 0;
                 console.log("Your number is even" + isEven);
@@ -191,7 +209,7 @@
                 alert(posNegMessage);
 
             }else{
-                alert("Hey, that's not a number");
+                alert("Hey, that's not a number")
             }
 
         }
