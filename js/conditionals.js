@@ -52,7 +52,7 @@
      * Pass the `randomColor` variable to your function and console.log the results.
      * You should see a different message every time you refresh the page
      */
-      //console.log(analyzeColor(randomColor));
+    //console.log(analyzeColor(randomColor));
     /**
      * TODO:
      * Refactor your above function to use a switch-case statement
@@ -80,8 +80,8 @@
      * user to your `analyzeColor` function. Alert the return value from your
      * function to show it to the user.
      */
-        // var userColor = prompt("What's your favorite color?");
-        // alert(analyzeColor(userColor));
+    // var userColor = prompt("What's your favorite color?");
+    // alert(analyzeColor(userColor));
 
     /* ########################################################################## */
 
@@ -170,9 +170,16 @@
      * HINT: The way we prompt for a value could be improved
      *
      */
+    var userConfirm = confirm("Would you like to enter a number?")
 
+        if(userConfirm){
+            var userInput = prompt("Please enter a number.");
+            console.log("user entered the following; " + userInput);
 
+            var isNumber = !isNaN(userInput);
+            if(isNumber){
 
+ get-user-number-return-alert
     function userNumber(numType) {
         var userChoice = confirm("Would you like to enter a number?");
         if (userChoice === true) {
@@ -189,9 +196,32 @@
                 alert("This is not an number")
             } else {
                 alert("Goodbye")
+              
+                var userNumber = parseFloat(userInput);
+                var isEven = userInput % 2 === 0;
+                console.log("Your number is even" + isEven);
+
+                var evenMessage = (isEven) ? "Your number is even!" : "Your number is odd!";
+                alert(evenMessage);
+                alert(userNumber + 100);
+
+                var posNegMessage = (userNumber >= 0)? "Your number is positive" : "Your number is negative";
+                alert(posNegMessage);
+
+            }else{
+                alert("Hey, that's not a number")
             }
+
         }
-    }
+
+
+
+
+
+
+
+
+
 
 })();
 
