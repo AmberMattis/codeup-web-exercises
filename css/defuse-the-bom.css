@@ -1,0 +1,32 @@
+body {
+    height:100%;
+    width: 100%;
+    color: white;
+    background-color: black;
+    position: relative;
+    font-size: 30px;
+    font-family: 'Turret Road', cursive;
+    text-shadow:5px 5px 5px #647a9c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#defuser {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: white;
+    box-shadow: rgba(0,0,0,.5) 0px 0px 10px 10px inset;
+    font-family: 'Syne Mono', monospace;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+#defuser:hover {
+    color: black;
+    background-color: yellow;
+}
