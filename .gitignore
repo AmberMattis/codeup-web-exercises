@@ -1,3 +1,4 @@
- input.idea/*
- *.iml
- .DS_STORE*
+input.idea/*
+*.iml
+.DS_STORE*
+js/keys.js
