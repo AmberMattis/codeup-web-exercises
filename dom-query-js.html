@@ -72,14 +72,14 @@
 
         // TODO: Set text color on every other list item to grey
         var listColor = function(event) {
-            for (var i = 1; i < listItems.length; i += 1) {
-                if (listItems[0]) {
-                    return listItems[i].style.color = "blue";
+            for (var i = 0; i < listItems.length; i += 1) {
+                if (listItems[i].getAttribute("data-dbid") === "1") {
+                    listItems[i].style.color = "blue";
                     continue;
                 }
 
                 if (i % 2 !== 0) {
-                    return listItems[i].style.color = "grey";
+                     listItems[i].style.color = "grey";
                 }
             }
         }
