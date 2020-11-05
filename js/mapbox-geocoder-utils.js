@@ -13,6 +13,8 @@
  *  })
  *
  */
+
+// input the address in the search part and your token key in the token portion
 function geocode(search, token) {
     var baseUrl = 'https://api.mapbox.com';
     var endPoint = '/geocoding/v5/mapbox.places/';
@@ -39,6 +41,7 @@ function geocode(search, token) {
  *  })
  *
  */
+
 function reverseGeocode(coordinates, token) {
     var baseUrl = 'https://api.mapbox.com';
     var endPoint = '/geocoding/v5/mapbox.places/';
