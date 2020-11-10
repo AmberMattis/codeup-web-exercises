@@ -6,15 +6,46 @@
 </head>
 <body>
 
+<h1>This is a jQuery page all about HTML</h1>
+
+<h2 id="fun-title " class="codeup">Fun Facts</h2>
+<div class="fun-facts codeup">
+<h3 class="">Did You Know?</h3>
+    <ul class="fact-list">
+        <li class="fact" id="fact-1">jQuery was originally called jSelect but the jSelect.com domain was not available</li>
+        <li class="fact" id="fact-2">The jQuery name ws stolen from another project (Java SQL Library</li>
+        <li class="fact" id="fact-3">jQuery launched in New York City on January 14, 2006</li>
+    </ul>
+</div>
+
+
 
 <script src="js/jquery-2.2.4.js"></script>
 <script>
 
-    $(document).ready(function(){
-        "use strict";
+     $(document).ready(function(){
+         "use strict";
 
-        alert("The Dom is finished loading");
+    //     alert("The Dom is finished loading");
+
+         var mainAlert = $("h1").html();
+         alert(mainAlert)
+
+         var alertFunFacts = $('#fact-1').html();
+            alert(alertFunFacts)
+
+         var redBorder = $('.codeup').css('border','1px solid red');
+
+         var listSize = $("li").css("font-size", "20px");
+
+         var all = $("h1, p, li").css("background-color","yellow", );
+
+
+
+
     })
+
+
 </script>
 </body>
 </html>
