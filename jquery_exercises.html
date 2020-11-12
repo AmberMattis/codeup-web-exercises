@@ -41,13 +41,30 @@
     //
     //      var all = $("h1, p, li").css("background-color","yellow", );
 
-        $("h1").click(function(){
-            $(this).css("background-color", "lightblue");
-        });
+         <!-- h1 bg turns lightblue when clicked -->
+            $("h1").click(function(){
+                $(this).css("background-color", "lightblue");
+            });
 
+
+       <!-- Paragraph font size increases to 18px when double clicked -->
         $("p").dblclick(function(){
             $(this).css("font-size", "18px")
         });
+
+
+
+       <!-- All li text turns red when you hover over it and black when not hovering -->
+        $("li").hover(
+            function() {
+                $(this).css("color", "red");
+            },
+
+            function() {
+                $(this).css("color", "black");
+            }
+
+        );
 
 
     })
