@@ -16,6 +16,7 @@
         <li class="fact" id="fact-2">The jQuery name ws stolen from another project (Java SQL Library</li>
         <li class="fact" id="fact-3">jQuery launched in New York City on January 14, 2006</li>
     </ul>
+    <p>More info will be added soon!</p>
 </div>
 
 
@@ -27,20 +28,43 @@
          "use strict";
 
     //     alert("The Dom is finished loading");
+    //
+    //      var mainAlert = $("h1").html();
+    //      alert(mainAlert)
+    //
+    //      var alertFunFacts = $('#fact-1').html();
+    //         alert(alertFunFacts)
+    //
+    //      var redBorder = $('.codeup').css('border','1px solid red');
+    //
+    //      var listSize = $("li").css("font-size", "20px");
+    //
+    //      var all = $("h1, p, li").css("background-color","yellow", );
 
-         var mainAlert = $("h1").html();
-         alert(mainAlert)
-
-         var alertFunFacts = $('#fact-1').html();
-            alert(alertFunFacts)
-
-         var redBorder = $('.codeup').css('border','1px solid red');
-
-         var listSize = $("li").css("font-size", "20px");
-
-         var all = $("h1, p, li").css("background-color","yellow", );
+         <!-- h1 bg turns lightblue when clicked -->
+            $("h1").click(function(){
+                $(this).css("background-color", "lightblue");
+            });
 
 
+       <!-- Paragraph font size increases to 18px when double clicked -->
+        $("p").dblclick(function(){
+            $(this).css("font-size", "18px")
+        });
+
+
+
+       <!-- All li text turns red when you hover over it and black when not hovering -->
+        $("li").hover(
+            function() {
+                $(this).css("color", "red");
+            },
+
+            function() {
+                $(this).css("color", "black");
+            }
+
+        );
 
 
     })
