@@ -1,6 +1,20 @@
 $(document).ready(function() {
 
+    // $('dl').children().each(function() {
+    //    $(this).click(function(e) {
+    //         e.preventDefault(e)
+    //         $("dt").toggleClass("highlight");
+    //         $("dd").toggleClass("invisible")
+    //     });
+    //     });
 
+    $("dd").each(function() {
+        $("dt").click(function (e) {
+            e.preventDefault();
+            $("dt").toggleClass("highlight")
+            $("dd").toggleClass("invisible")
+        })
+    });
 
     $("#a-link").click(function (e) {
         e.preventDefault();
@@ -62,5 +76,15 @@ $(document).ready(function() {
         $("#j-link").toggleClass("highlight")
         $("#j-def").toggleClass("invisible")
     });
+
+    $("button").click(function(e){
+        $("#national-parks").children().last().css("background-color","yellow")
+        $("#state-parks-texas").children().last().css("background-color","yellow")
+
+    })
+
+    $("li").click(function(){
+        $(this).parent().children().first().css("font-weight", "bold");
+    })
 
 });

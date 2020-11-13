@@ -11,3 +11,25 @@ dl {
     background-color: lightblue;
 }
 
+.frame {
+    height: 200px;
+    width: 250px;
+
+}
+
+#frame-1{
+    border: 10px solid lightblue;
+}
+
+#frame-2{
+    border: 10px solid lightcoral;
+}
+
+#frame-3{
+    border: 10px solid lightgreen;
+}
+
+.frame-container {
+    display:flex;
+}
+
