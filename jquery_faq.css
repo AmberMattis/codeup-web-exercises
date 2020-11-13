@@ -2,6 +2,9 @@
     visibility: hidden;
 }
 
+.visable {
+    visibility: visible;
+}
 
 dl {
     text-align: center;

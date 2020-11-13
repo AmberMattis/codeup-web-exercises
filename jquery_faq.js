@@ -87,4 +87,17 @@ $(document).ready(function() {
         $(this).parent().children().first().css("font-weight", "bold");
     })
 
+    $("#no").click(function(){
+        $(".member").slideUp();
+    })
+
+    $("#national-parks-heading").click(function(){
+        $("#national-parks").removeClass("invisible").children().slideToggle();
+
+    })
+
+    // $("#state-parks-texas").click(function(){
+    //     $("#te")
+    // })
+
 });
