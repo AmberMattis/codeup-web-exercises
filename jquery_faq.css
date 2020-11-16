@@ -2,29 +2,63 @@
 html, body {
     width: 100%;
     height: 100%;
-    background: url(img/space-bg.jpg) no-repeat center center fixed;
+    background: url(img/jupiter1.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    position:relative;
 }
 
 
 .invisible {
     visibility: hidden;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
+
 
 .visable {
     visibility: visible;
 }
 
+
 dl {
     text-align: center;
+    background-color: #660f56;
+    box-shadow: 0 10px 10px black;
+    border-radius: 30px;
+    opacity: 0.7;
 }
 
-.highlight {
-    background-color: lightblue;
+
+dd {
+    color: white;
+    font-size: 20px;
 }
+
+
+li {
+    color: white;
+}
+
+
+.galaxies>button {
+    margin-left: 270px;
+}
+
+
+.galaxy-heading {
+    color:white;
+}
+
+
+.highlight {
+    background-color: darksalmon;
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 
 .frame {
     height: 200px;
@@ -32,19 +66,115 @@ dl {
 
 }
 
-#frame-you{
+
+#frame-you {
     border: 10px solid lightblue;
 }
 
-#frame-are{
+
+#frame-are {
     border: 10px solid lightcoral;
 }
 
-#frame-human{
+
+#frame-human {
     border: 10px solid lightgreen;
 }
+
 
 .frame-container {
     display:flex;
 }
 
+
+.member {
+    background-color: white;
+    opacity: 0.5;
+    text-align: center;
+}
+
+
+.jumbo-style {
+    height: 800px;
+    background: none;
+}
+
+
+#main-style {
+    background-color: #212529;
+    width:100%;
+    opacity: 0.9;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    margin-right: 0;
+}
+
+
+.container-style {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+.def-style {
+    font-size: 25px;
+}
+
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+
+.galaxy-list {
+ margin-left: 10px;
+}
+
+
+.row {
+    width: 100%;
+}
+
+
+h4 {
+    text-align: center;
+}
+
+
+.list-headings {
+    margin: 40px 0;
+    font-family: 'Goldman', cursive;
+
+}
+
+
+.display-4 {
+    color: white;
+    font-size: 100px;
+}
+
+
+a {
+    color: tan;
+}
+
+
+.lead {
+    color:lightgray;
+}
+
+
+#jumbo-heading {
+    margin-top: 200px;
+}
+
+
+#jumbo-paragraph {
+    color:lightgray;
+    font-size: 40px;
+}
