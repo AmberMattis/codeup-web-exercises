@@ -1,0 +1,15 @@
+html, body {
+    background: hsla(15, 21%, 65%, 1);
+
+    background: linear-gradient(135deg, hsla(15, 21%, 65%, 1) 0%, hsla(4, 17%, 48%, 1) 100%);
+
+    background: -moz-linear-gradient(150deg, hsla(15, 21%, 65%, 1) 0%, hsla(4, 17%, 48%, 1) 100%);
+
+    background: -webkit-linear-gradient(135deg, hsla(15, 21%, 65%, 1) 0%, hsla(4, 17%, 48%, 1) 100%);
+
+}
+
+
+.first {
+    margin: 20px;
+}
