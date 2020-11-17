@@ -44,5 +44,12 @@
             "tool"
         ],
         "price": 10
-    }
+    }, {
+    "title": "pliers",
+    "quantity": 20,
+    "categories": [
+        "tool"
+    ],
+    "price": 10
+}
 ]

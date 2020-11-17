@@ -33,8 +33,10 @@
 
         });
         $("#insertProducts").html(inputsHTML);
+
     }
     $("button").click(getData);
+
     // TODO: Take the data from inventory.json and append it to the products table
 
 

@@ -3,30 +3,31 @@
 <htmd><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Online Store</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ajax-store.css">
 </head>
 <body cz-shortcut-listen="true">
+    <div class="container">
+        <h1>My Tool Store</h1>
 
-<h1>My Tool Store</h1>
+            <div class="card" style="width: 30rem;">
+                <div class="card-body">
+                    <table id="products">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Categories</th>
+                            </tr>
+                            </thead>
+                        <tbody id="insertProducts"></tbody>
+                    </table>
+                </div>
+            </div>
 
-
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <table id="products">
-                <thead>
-                    <tr>
-                        <th>Title</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
-                        <th>Categories</th>
-                    </tr>
-                    </thead>
-                <tbody id="insertProducts"></tbody>
-            </table>
-        </div>
+        <button>Click for Data</button>
     </div>
-
-
-<button>Click for Data</button>
+</body>
 
 
 
