@@ -83,3 +83,12 @@ const instructorNames = users.reduce(function(prevUser,curUser){
     return `${prevUser} ${curUser.name},`;
 },"")
 console.log("Your instructors are:" + instructorNames);
+
+
+
+
+//6 BONUS//
+const getLanguages = users.reduce(function(prevUser,curUser){
+    return `${prevUser} ${curUser.name}: ${curUser.languages}  `
+},"")
+console.log(getLanguages);
