@@ -67,6 +67,10 @@ console.log(`${parseInt(avgExperience / users.length)} years`);
 //4//
 const longestEmail = getEmail.reduce(function(currentLongestEmail, currentEmail) {
     if(currentEmail.length > currentLongestEmail.length){
+        return currentEmail;
+    }else{
+        return currentLongestEmail;
     }
+
 },"")
 console.log(longestEmail);
