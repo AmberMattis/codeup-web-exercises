@@ -74,3 +74,11 @@ const longestEmail = getEmail.reduce(function(currentLongestEmail, currentEmail)
 
 },"")
 console.log(longestEmail);
+
+
+//5//
+const instructorNames = users.reduce(function(prevUser,curUser){
+    return `${prevUser} ${curUser.name},`;
+},"")
+
+console.log("Your instructors are:" + instructorNames);
