@@ -37,6 +37,7 @@ const users = [
 ];
 
 
+
 //1//
 const threePlusLang = users.filter(function(user){
         return user.languages.length > 2;
@@ -71,14 +72,14 @@ const longestEmail = getEmail.reduce(function(currentLongestEmail, currentEmail)
     }else{
         return currentLongestEmail;
     }
-
 },"")
 console.log(longestEmail);
+
+
 
 
 //5//
 const instructorNames = users.reduce(function(prevUser,curUser){
     return `${prevUser} ${curUser.name},`;
 },"")
-
 console.log("Your instructors are:" + instructorNames);
