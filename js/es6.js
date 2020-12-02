@@ -76,7 +76,7 @@ users.forEach(function(user) {
   const {name, email, languages} = users
 
   // TODO: rewrite the assignment below to use template strings
-  developers.push(`${name}'s email is  ${email} ${name}  knows ${languages}`);
+  developers.push(`${name} s email is  ${email} ${name}  knows ${languages}`);
 
   console.log(developers);
 });
@@ -88,6 +88,6 @@ var list = '<ul>';
 developers.forEach(function (developer) {
 
   // TODO: rewrite the assignment below to use template strings
-  list += '<li>' + developer + '</li>';
+  list += `<li>${developer}</li>`;
 });
 list += '</ul>';
