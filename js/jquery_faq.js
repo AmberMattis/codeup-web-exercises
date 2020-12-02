@@ -77,9 +77,9 @@ $(document).ready(function() {
 
 
     $("button").click(function(e){
-        $("#messier-81-galaxy").children().last().css("background-color","navy")
-        $("#centaurus-a-galaxy").children().last().css("background-color","navy")
-        $("#messier-82-galaxy").children().last().css("background-color","navy")
+        $("#messier-81-galaxy").children().last().css("background-color","lightblue").css("color","black")
+        $("#centaurus-a-galaxy").children().last().css("background-color","lightblue").css("color","black")
+        $("#messier-82-galaxy").children().last().css("background-color","lightblue").css("color","black")
 
     })
 
