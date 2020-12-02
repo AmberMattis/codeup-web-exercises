@@ -21,16 +21,18 @@ $(document).ready(function(){
         var newHtml = "";
 
         inputs.forEach(function(input){
-            newHtml += "<div class='first'>";
+
+            newHtml += "<div class=' first'>";
             newHtml += "<h3>" + input.title + "</h3>";
             newHtml += "<p>"  + input.content + "</p>";
             newHtml += "<p>" + input.categories + "</p>";
             newHtml += "<h4>" + input.date + "</h4>";
             newHtml += "</div>";
 
+
         })
 
-      $("#posts").html(newHtml);
+      $(".container").html(newHtml);
     }
 
     $(window).load(getBlogs);
